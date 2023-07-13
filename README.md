@@ -8,9 +8,12 @@ This extension works by injecting a small script into the YouTube page that hide
 
 This extension has three different states shown on its icon after you pin it:
 
+ ![Tool Screenshot](./AdSilencer-for-YouTube.gif)
+
 1. ON: The extension is actively monitoring ads.
 2. Muted: The extension is currently silencing an ad.
 3. OFF: The extension has been turned off.
+
 
 
 ## Installation
