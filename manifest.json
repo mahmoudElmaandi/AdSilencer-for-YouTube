@@ -1,0 +1,26 @@
+{
+    "name": "AdSilencer for YouTube",
+    "manifest_version": 3,
+    "version": "1.0",
+    "author": "mahmoudElmaandi",
+    "description": "hide and mute youtube ads while still allowing them to play in the background",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_title": "AdSilencer for YouTube"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "js": [
+                "index.js"
+            ],
+            "matches": [
+                "https://*.youtube.com/watch*"
+            ]
+        }
+    ]
+}
