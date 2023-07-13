@@ -1,3 +1,9 @@
+const responseCallback = () => {
+    if (chrome.runtime.lastError && chrome.runtime.lastError.message.includes("Receiving end does not exist")) {
+        console.log("lastError", chrome.runtime.lastError)
+    }
+};
+
 chrome.runtime.onInstalled.addListener(() => {
     chrome.action.setBadgeText({
         text: "OFF",
@@ -44,5 +50,5 @@ chrome.action.onClicked.addListener(async (tab) => {
         color: isOff ? prevColor : "#FF0000"
     });
 
-    chrome.tabs.sendMessage(tab.id, { to: "index", action: isOff ? "observe" : "disconnect" })
+    chrome.tabs.sendMessage(tab.id, { to: "index", action: isOff ? "observe" : "disconnect" }, responseCallback)
 });

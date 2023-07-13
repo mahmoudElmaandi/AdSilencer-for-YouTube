@@ -6,6 +6,13 @@ AdSilencer for YouTube allows users to enjoy watching videos while still support
 
 This extension works by injecting a small script into the YouTube page that hide the ads and mutes the audio.
 
+This extension has three different states shown on its icon after you pin it:
+
+1. ON: The extension is actively monitoring ads.
+2. Muted: The extension is currently silencing an ad.
+3. OFF: The extension has been turned off.
+
+
 ## Installation
 
 AdSilencer for YouTube is available for Google Chrome. You can install the extension by following these steps:
@@ -14,7 +21,7 @@ AdSilencer for YouTube is available for Google Chrome. You can install the exten
 2. Visit `chrome://extensions/` and turn on "Developer mode"
 3. Click "Load unpacked" button and navivigate to the folder resulting from extracting the zip file.
 4. Once installed, the extension will automatically activate when you visit a YouTube video page.
-5. Don't forget to pin the extension.
+5. Don't forget to pin the extension to switch it on and off and keep track of its state.
 
 ## Contributing
 

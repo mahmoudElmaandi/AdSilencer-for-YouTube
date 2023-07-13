@@ -38,7 +38,7 @@ function sendSetBadgeStatusMessage({ text, color }) {
 function observe() {
     videoPlayer = document.querySelector('#player-container .html5-video-player');
     let noTries = 0;
-    while (!videoPlayer && ++noTries < 5) videoPlayer = document.querySelector('#player-container .html5-video-player');
+    while (!videoPlayer && ++noTries < 10) videoPlayer = document.querySelector('#player-container .html5-video-player');
 
     sendSetBadgeStatusMessage(videoPlayer ? extStatus.on : extStatus.off);
 
