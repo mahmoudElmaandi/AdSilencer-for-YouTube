@@ -14,7 +14,7 @@ AdSilencer for YouTube is available for Google Chrome. You can install the exten
 2. Visit `chrome://extensions/` and turn on "Developer mode"
 3. Click "Load unpacked" button and navivigate to the folder resulting from extracting the zip file.
 4. Once installed, the extension will automatically activate when you visit a YouTube video page.
-
+5. Don't forget to pin the extension.
 
 ## Contributing
 
